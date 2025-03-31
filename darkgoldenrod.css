@@ -1,0 +1,72 @@
+/* darkgoldenrod.css */
+.darkgoldenrod-toolbar {
+  position: absolute;
+  background-color: #fffbea;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  display: none;
+  z-index: 9999999999999999999999;
+  font-family: sans-serif;
+  width: 250px;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 0.5rem;
+  
+}
+
+/* Accordion items */
+.darkgoldenrod-accordion-item {
+  /*margin-bottom: 1rem;*/
+  border-bottom: 1px solid #ddd;
+}
+
+/* Accordion title */
+.darkgoldenrod-accordion-title {
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0;
+  color: #333;
+}
+
+/* The plus/minus sign */
+.darkgoldenrod-accordion-title::after {
+  content: "+";
+  margin-left: 5px;
+}
+
+.darkgoldenrod-accordion-title.active::after {
+  content: "−";
+}
+
+/* Accordion content */
+.darkgoldenrod-accordion-content {
+  display: none;
+  padding: 0.3rem 0;
+  column-count: 2;
+}
+
+.darkgoldenrod-accordion-content label {
+  display: block;
+  /*margin-bottom: 0.25rem;*/
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.darkgoldenrod-accordion-content input[type="text"],
+.darkgoldenrod-accordion-content input[type="number"],
+.darkgoldenrod-accordion-content input[type="color"],
+.darkgoldenrod-accordion-content select {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 0.8rem;
+  padding: 5px;
+    border-radius: 7px;
+    border: 1px solid lightgrey;
+}
+
